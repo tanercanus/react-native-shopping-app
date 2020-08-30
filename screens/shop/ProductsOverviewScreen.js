@@ -7,7 +7,7 @@ import ProductItem from '../../components/shop/ProductItem';
 import * as cartActions from '../../store/actions/cart';
 import HeaderButton from '../../components/UI/HeaderButton';
 
-const ProductOverviewScreen = props => {
+const ProductsOverviewScreen = props => {
 
     const products = useSelector(state => state.products.availableProducts);
     const dispatch = useDispatch();
@@ -36,7 +36,7 @@ const ProductOverviewScreen = props => {
     );
 };
 
-ProductOverviewScreen.navigationOptions = navData => {
+ProductsOverviewScreen.navigationOptions = navData => {
     return {
         headerTitle: 'All Products',
         headerRight: (
@@ -54,4 +54,4 @@ ProductOverviewScreen.navigationOptions = navData => {
     }
 };
 
-export default ProductOverviewScreen;
+export default ProductsOverviewScreen;
